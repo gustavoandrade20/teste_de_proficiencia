@@ -1,0 +1,128 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #6c5ce7, #00cec9);
+    --primary-dark: #2d1b64;
+    --white-color: #FFFFFF;
+    --light-gray-color: #DFE6E9;
+    --secondary-color: #fd79a8;
+    --tertiary-color: #00cec9;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--primary-gradient);
+    color: var(--white-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 640px;
+    margin: 10vh auto;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+}
+
+.lista {
+    font-size: 60px;
+    margin: 15px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.input-tarefa {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--light-gray-color);
+    color: var(--primary-dark);
+}
+
+.btn-tarefa {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-tarefa:hover {
+    opacity: 0.8;
+    transform: scale(1.03);
+}
+
+.tarefas {
+    margin: 20px;
+    text-align: left;
+    font-size: 25px;
+    list-style: none;
+}
+
+.tarefas li {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.tarefas li:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.concluida {
+    text-decoration: line-through;
+    color: var(--light-gray-color);
+    opacity: 0.7;
+}
+
+.apagar {
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    background: var(--tertiary-color);
+    color: var(--primary-dark);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.apagar:hover {
+    opacity: 0.7;
+}
+
+.btn-limpar {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-limpar:hover {
+    opacity: 0.8;
+    transform: scale(1.03);
+}
