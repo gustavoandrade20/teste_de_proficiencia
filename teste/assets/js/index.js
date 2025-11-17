@@ -37,15 +37,11 @@ function criaTarefa(textoInput) {
     salvarTarefas();
 }
 
-// botão adicionar
 btnTarefa.addEventListener('click', function () {
     if (!inputTarefa.value) return;
     criaTarefa(inputTarefa.value);
 });
 
-// --- AQUI COMEÇA O QUE FOI ADICIONADO ---
-
-// marcar como concluída
 document.addEventListener('click', function (e) {
     const el = e.target;
 
@@ -60,7 +56,6 @@ document.addEventListener('click', function (e) {
     }
 });
 
-// salvar concluídas também
 function salvarTarefas() {
     const liTarefas = tarefas.querySelectorAll('li');
     const ListaDeTarefas = [];
@@ -95,7 +90,6 @@ function adicionaTarefasSalvas() {
 }
 adicionaTarefasSalvas();
 
-// botão limpar lista
 const btnLimpar = document.querySelector('.btn-limpar');
 btnLimpar.addEventListener('click', () => {
     tarefas.innerHTML = '';
